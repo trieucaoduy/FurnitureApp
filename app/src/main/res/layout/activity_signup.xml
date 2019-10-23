@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"/>
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnSignUp"
         android:text="SIGN UP"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -103,7 +103,8 @@
         android:layout_gravity="center"
         android:background="@drawable/btn_cus"
         android:layout_width="181dp"
-        android:layout_height="48dp"/>
+        android:layout_height="48dp"
+        android:fontFamily="@font/montserrat"/>
     <TextView
         android:id="@+id/txtLogin"
         android:text="Already have an account?"
@@ -112,5 +113,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:fontFamily="@font/montserrat"/>
 </LinearLayout>

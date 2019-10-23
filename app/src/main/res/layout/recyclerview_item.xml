@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
             android:textColor="#000000"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:textStyle="bold"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="8dp"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
             android:textColor="#3c4245"
-            android:textSize="15sp"
+            android:textSize="13sp"
             android:layout_below="@+id/txtNameProduct"
             android:layout_marginLeft="8dp"/>
     </RelativeLayout>

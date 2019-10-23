@@ -10,7 +10,7 @@
             android:fontFamily="@font/montserrat"
             android:text="FURNITURE"
             android:textColor="#FFFFFF"
-            android:textSize="50dp"
+            android:textSize="40dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="100dp"
             android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
             android:fontFamily="@font/montserrat"
             android:text="Make\nYour\nStyle"
             android:textColor="#FFFFFF"
-            android:textSize="40dp"
+            android:textSize="30dp"
             android:layout_marginHorizontal="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -72,13 +72,15 @@
         <Button
             android:id="@+id/btnLogin"
             android:text="LOGIN"
+            android:textStyle="bold"
             android:textSize="18dp"
             android:textColor="#FFFFFF"
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:background="@drawable/btn_cus"
             android:layout_width="181dp"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:fontFamily="@font/montserrat"/>
         <TextView
             android:id="@+id/txtSignUp"
             android:text="Don't have any account?"
@@ -87,5 +89,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:fontFamily="@font/montserrat"/>
 </LinearLayout>
