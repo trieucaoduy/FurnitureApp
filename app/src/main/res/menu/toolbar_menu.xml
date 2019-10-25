@@ -6,7 +6,7 @@
 
     <item
         android:id="@+id/btnSearch"
-        android:icon="@drawable/ic_search"
+        android:icon="@drawable/search_white"
         android:orderInCategory="100"
         app:showAsAction="always"
         android:actionLayout="@layout/toolbar"
@@ -14,7 +14,7 @@
 
     <item
         android:id="@+id/btnCart"
-        android:icon="@drawable/ic_cart"
+        android:icon="@drawable/cart_white"
         android:orderInCategory="100"
         app:showAsAction="always"
         android:actionLayout="@layout/toolbar"

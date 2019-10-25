@@ -19,67 +19,19 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <include
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
-                layout="@layout/toolbar"
-                app:fontFamily="@font/montserrat" />
-
-            <ViewFlipper
-                android:id="@+id/v_flipper"
                 android:layout_width="match_parent"
-                android:layout_height="200dp" />
+                android:layout_height="?attr/actionBarSize"
+                android:background="#DEA925"
+                android:elevation="4dp"
+                app:fontFamily="@font/montserrat"
+                app:popupTheme="@style/Theme.AppCompat.NoActionBar"></androidx.appcompat.widget.Toolbar>
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:fontFamily="@font/montserrat"
-                android:text="POPULAR PRODUCT"
-                android:textColor="#000000"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
-
-            <RelativeLayout
+            <FrameLayout
+                android:id="@+id/fragment_container"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:nestedScrollingEnabled="false"
-                    android:overScrollMode="never"
-                    android:padding="4dp"
-                    android:paddingBottom="70dp" />
-            </RelativeLayout>
-
-            <Button
-                android:text="VIEW STORE"
-                android:textColor="#FFFFFF"
-                android:textSize="13sp"
-                android:textStyle="bold"
-                android:background="@drawable/btn_cus"
-                android:fontFamily="@font/montserrat"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-            </Button>
-
-
-            <TextView
-                android:id="@+id/productalbum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:fontFamily="@font/montserrat"
-                android:text="PRODUCT ALBUM"
-                android:textColor="#000000"
-                android:textSize="20dp"
-                android:textStyle="bold"></TextView>
+                android:layout_height="match_parent" />
 
 
         </LinearLayout>
@@ -90,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="#FFFFFF"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu"></com.google.android.material.navigation.NavigationView>
 
