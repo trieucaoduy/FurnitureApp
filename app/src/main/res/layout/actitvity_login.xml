@@ -1,55 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@drawable/img1"
     android:layout_width="match_parent"
     android:fontFamily="@font/montserrat"
     android:layout_height="match_parent">
 
-        <TextView
-            android:fontFamily="@font/montserrat"
-            android:text="FURNITURE"
-            android:textColor="#FFFFFF"
-            android:textSize="40dp"
-            android:layout_marginHorizontal="20dp"
+        <ImageView
+            android:src="@drawable/ic_thunderbird96"
             android:layout_marginTop="100dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </TextView>
-        <TextView
-            android:fontFamily="@font/montserrat"
-            android:text="Make\nYour\nStyle"
-            android:textColor="#FFFFFF"
-            android:textSize="30dp"
-            android:layout_marginHorizontal="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </TextView>
+            android:layout_height="wrap_content"/>
 
         <EditText
+            android:elevation="10dp"
             android:id="@+id/txtEmailLogin"
             android:inputType="textEmailAddress"
             android:hint="Email Address"
+            android:textSize="14dp"
             android:textColorHint="#000000"
-            android:background="#FFFFFF"
-            android:padding="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:background="@drawable/round_editext"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:padding="15dp"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"/>
 
         <EditText
+            android:elevation="10dp"
             android:id="@+id/txtPassLogin"
             android:inputType="textPassword"
             android:hint="Password"
+            android:textSize="14dp"
             android:textColorHint="#000000"
-            android:background="#FFFFFF"
-            android:padding="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:background="@drawable/round_editext"
+            android:padding="15dp"
+            android:layout_marginHorizontal="25dp"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"/>
@@ -59,7 +47,7 @@
         <TextView
             android:id="@+id/txtForgotPass"
             android:text="Forgot your password?"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="14dp"
             android:layout_gravity="right"
             android:layout_marginTop="10dp"
@@ -70,6 +58,7 @@
             />
 
         <Button
+            android:elevation="10dp"
             android:id="@+id/btnLogin"
             android:text="LOGIN"
             android:textStyle="bold"
@@ -77,14 +66,14 @@
             android:textColor="#FFFFFF"
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/btn_cus"
+            android:background="@drawable/btn_violet"
             android:layout_width="181dp"
             android:layout_height="48dp"
             android:fontFamily="@font/montserrat"/>
         <TextView
             android:id="@+id/txtSignUp"
             android:text="Don't have any account?"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="14dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
@@ -93,4 +82,26 @@
             android:onClick="onClick"
             android:clickable="true"
             android:fontFamily="@font/montserrat"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:elevation="2dp"
+                    android:src="@drawable/ic_google"
+                    android:padding="7dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_circle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:elevation="2dp"
+                    android:src="@drawable/ic_facebook_2"
+                    android:padding="7dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_circle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
 </LinearLayout>
