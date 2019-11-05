@@ -48,9 +48,6 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
-                else {
-                    Toast.makeText(LoginActivity.this,"Please Login!", Toast.LENGTH_SHORT).show();
-                }
             }
         };
 

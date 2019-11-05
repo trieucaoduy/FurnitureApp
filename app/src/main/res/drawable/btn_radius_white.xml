@@ -4,15 +4,15 @@
     android:shape="rectangle">
 
     <corners
-        android:radius="5dp" />
+        android:radius="30dp" />
 
     <padding
-        android:left="20dp"
-        android:right="20dp"
+        android:left="10dp"
+        android:right="10dp"
         android:top="10dp"
         android:bottom="10dp"/>
 
-    <solid android:color="#DEA925"/>
+    <solid android:color="#ffffff"/>
 
     <text android:color="#FFFFFF"/>
 
