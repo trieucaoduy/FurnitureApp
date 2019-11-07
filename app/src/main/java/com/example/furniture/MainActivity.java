@@ -80,12 +80,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             }
             case R.id.category: {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CategoryFragment()).commit();
+                Intent itCate = new Intent(MainActivity.this, CategoryList.class);
+                startActivity(itCate);
                 break;
             }
             case R.id.cart: {
-                Intent itCate = new Intent(MainActivity.this, CategoryList.class);
-                startActivity(itCate);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CategoryFragment()).commit();
                 break;
             }
             case R.id.order: {
