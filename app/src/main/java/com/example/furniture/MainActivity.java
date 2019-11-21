@@ -16,15 +16,20 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 import android.widget.Toast;
 
+import com.example.furniture.Common.Common;
+import com.example.furniture.Database.Database;
 import com.example.furniture.Model.Category;
+import com.example.furniture.Model.Order;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
@@ -34,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActionBarDrawerToggle toggle;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
+    FirebaseDatabase database;
+    Button btnCart;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +54,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportActionBar().setTitle(null);
 
 
+
+
+        database = FirebaseDatabase.getInstance();
 
         //Drawerview Navigation
         drawer = findViewById(R.id.drawer_layout);
@@ -60,8 +71,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
-
-
 
     }
 
@@ -85,7 +94,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             }
             case R.id.cart: {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CategoryFragment()).commit();
+                Intent itcart = new Intent(MainActivity.this, Cart.class);
+                startActivity(itcart);
                 break;
             }
             case R.id.order: {
