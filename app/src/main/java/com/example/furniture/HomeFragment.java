@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toolbar;
 import android.widget.ViewFlipper;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
@@ -22,6 +26,7 @@ public class HomeFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+
 
 
     @Nullable
@@ -39,6 +44,8 @@ public class HomeFragment extends Fragment {
             flipperImages(images[i];
         }
         */
+
+
 
         //loop
         for (int image : images) {
